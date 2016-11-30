@@ -2,6 +2,10 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
+#Install the dependencies 
+
+Run `npm install` to install all dependencies of Angular2
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
@@ -12,6 +16,16 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Building for cordova
+
+Run `ng-build -prod --output-path=www`. This will put your angular dist code ready to be deployed for app.
+
+## Add platform for cordova
+Run `cordova platform add android/ios` to add platform.
+
+## Build and run your app
+Run `cordova build` followed by `cordova run`
 
 ## Running unit tests
 
